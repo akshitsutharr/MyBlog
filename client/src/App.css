@@ -82,6 +82,11 @@ div.post div.texts h2{
   text-decoration: none;
 }
 
+div.post div.texts a{
+  color: #222;
+  text-decoration: none;
+}
+
 div.post div.text h2{
   text-decoration: none;
   margin: 0;
