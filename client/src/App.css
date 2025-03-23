@@ -1,0 +1,209 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  color: #222;
+  font-family: 'Kanit', sans-serif;
+}
+
+h1, h2, h3,span {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+
+img{
+  max-width: 100%;
+
+}
+main{
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+
+header a.logo{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header nav{
+  display: flex;
+  gap: 15px;
+}
+
+div.post {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #686565;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+div.post div.image {
+  border-radius: 20px;
+  overflow: hidden; /* This ensures the scaled image stays within the image container */
+  position: relative;
+  border: 1px solid #ffffff; /* Optional: visible border for the image container */
+}
+
+div.post div.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+div.post div.image img:hover { 
+  transform: scale(1.1); 
+}
+
+div.post div.texts h2{
+  color: #222;
+  text-decoration: none;
+}
+
+div.post div.text h2{
+  text-decoration: none;
+  margin: 0;
+  font-size: 1.8rem;
+
+}
+
+div.post-page div.edit-row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+}
+
+div.post-page div.edit-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+div.post-page div.edit-btn:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+div.post-page div.edit-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+
+div.post p.info{
+  margin: 6px 0;
+  color: #888;
+  font-size: .9rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+div.post p.info a.author{
+  color: #333;
+
+}
+
+div.post p.summary{
+  margin: 10px 0;
+  line-height: 1.4rem;
+
+}
+
+form.login, form.register{
+  max-width: 400px;
+  margin: 0 auto;
+}
+input{
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  border-radius: 5px;
+}
+button{
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 0;
+}
+
+form.login h1, form.register h1{
+  text-align: center;
+}
+
+.post-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.post-link:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.post-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-page h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.post-page .image {
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.post-page .content {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+}
